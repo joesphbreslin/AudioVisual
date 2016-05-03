@@ -67,3 +67,17 @@ rotateY(.67);
 image(cam, -2200, -200,6000, 5000);
 tint(0, 154, in.left.level()*15000, 30);  // Tint blue and set transparency
 popMatrix();
+stroke(0);
+camera(eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ);
+for (VrHead vr : vrHead) {
+vr.update();
+
+vr.vel = vr.vel +(vr.acc * vr.deltaTime);
+
+vr.z = vr.z + (vr.vel*vr.deltaTime);
+}
+
+
+}
+
+
