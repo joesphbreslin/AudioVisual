@@ -20,4 +20,18 @@ VrHead(float xPos, float yPos, float zPos)
   y = yPos;
   z = zPos;
 }
-}
+void update()
+{
+ if(z > height +400)
+  {
+    vel = - vel;
+  }
+fill(in.left.level()*10000,0,0,trans);
+//VrFace
+pushMatrix(); 
+beginShape();
+vertex(x+134.376, y+3.525,z+78.118);
+vertex(x+70.241, y+114.610,z+78.118); 
+vertex(x+80.163, y+131.795,z+4.062); 
+vertex(x+154.219,y+ 3.525,z+4.062); 
+endShape();
