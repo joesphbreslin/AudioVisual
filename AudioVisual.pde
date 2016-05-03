@@ -8,3 +8,9 @@ float eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ;
 
 import ddf.minim.*;
 Minim minim;
+
+AudioInput in;
+VrHead []vrHead; 
+int count;
+int unit = 70;
+float g = 10;
