@@ -14,3 +14,6 @@ VrHead []vrHead;
 int count;
 int unit = 70;
 float g = 10;
+void setup() {
+  size(640, 640, P3D);
+}
