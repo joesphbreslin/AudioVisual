@@ -43,4 +43,10 @@ int wideCount = width / unit;
 int highCount = height / unit;
 count = wideCount * highCount;
 vrHead= new VrHead[count];
-
+int index = 0;
+for (int y = 0; y < highCount; y++) {
+for (int x = 0; x < wideCount; x ++) {
+vrHead[index++] = new VrHead(x*(unit*3), y*(unit*3), 0);
+    }
+  }
+}

@@ -157,3 +157,44 @@ vertex(x+0, y+0, z-100);
 vertex(  x+ 25,   y+ 43.301, z-86.603);
 vertex(   x-25, y+   43.301, z-86.603);
 endShape();
+////ThirdSegment
+//a
+ beginShape();
+vertex(x+0,y+ 0, z+100);
+vertex(  x -25,   y+ 43.301, z+86.603);
+vertex(  x-50,  y+0, z+86.603);
+endShape();
+//b
+ beginShape();
+vertex(   x-25, y+43.301, z+86.603);
+vertex(  x-50,  y+0, z+86.603);
+vertex( x-86.603,y+0,z+50);
+vertex( x-43.301,y+75,z+50);
+endShape();
+//c
+beginShape();
+vertex( x-86.603,y+0,z+50);
+vertex( x-43.301,y+75,z+50);
+vertex(x-50,y+86.603,z+0);  
+vertex( x-100,y+0,z+0);
+endShape();
+//d
+beginShape();
+vertex(x-50,y+86.603,z+0);  
+vertex( x-100,y+0,z+0);
+vertex( x-86.603,y+0,z-50);
+vertex( x-43.301,y+75,z-50);
+endShape();
+//e
+ beginShape();
+vertex(  x -25,   y+ 43.301, z-86.603);
+vertex(  x-50,  y+0, z-86.603);
+vertex( x-86.603,y+0,z-50);
+vertex( x-43.301,y+75,z-50);
+endShape();
+//f
+ beginShape();
+vertex(x+0, y+0, z-100);
+vertex(  x -25,   y+ 43.301, z-86.603);
+vertex(  x-50, y+ 0, z-86.603);
+endShape();
