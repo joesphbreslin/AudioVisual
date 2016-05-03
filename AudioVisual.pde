@@ -28,4 +28,13 @@ void setup() {
       cam = new Capture(this, cameras[0]);
     cam.start();     
   }
+eyeX = 2000;
+eyeY = 2000;
+eyeZ = 500;
+centerX = width/2;
+centerY = height/2;
+centerZ = width/2;
+upX =0; 
+upY = 0;
+upZ =-1;
 
