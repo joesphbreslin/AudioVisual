@@ -50,3 +50,10 @@ vrHead[index++] = new VrHead(x*(unit*3), y*(unit*3), 0);
     }
   }
 }
+void draw() {  
+frameRate(30);
+xoff = xoff + .01;
+float n = noise(xoff) * width;
+if (cam.available() == true) {
+cam.read();
+}
