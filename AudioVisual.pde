@@ -57,3 +57,13 @@ float n = noise(xoff) * width;
 if (cam.available() == true) {
 cam.read();
 }
+pushMatrix();
+translate(-600,-2400,2800);
+scale(1.8);
+rotateX(454);
+rotateZ(443);
+println (mouseX +"," + mouseY);
+rotateY(.67);
+image(cam, -2200, -200,6000, 5000);
+tint(0, 154, in.left.level()*15000, 30);  // Tint blue and set transparency
+popMatrix();
