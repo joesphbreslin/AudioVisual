@@ -37,4 +37,10 @@ centerZ = width/2;
 upX =0; 
 upY = 0;
 upZ =-1;
+minim = new Minim(this);
+in = minim.getLineIn();
+int wideCount = width / unit;
+int highCount = height / unit;
+count = wideCount * highCount;
+vrHead= new VrHead[count];
 
